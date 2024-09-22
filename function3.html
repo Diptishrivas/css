@@ -1,0 +1,36 @@
+<script>
+    function test()
+    {
+        //     s="Bhopal"
+        // alert( s.endsWith("pal"))
+        for(i=0;i<city.options.length;i++)
+        {
+            // alert(city.options[i].text)
+            if(city.options[i].text.endsWith('pur'))
+            {
+                var opt=document.createElement('option')
+                opt.text=city.options[i].text
+                Scity.add(opt)
+            }
+
+        }
+    }
+</script>
+<html>
+    <select id="city">
+        <option>-Select-</option>
+        <option>-pune-</option>
+        <option>Ramgarh-</option>
+        <option>Kohlapur</option>
+        <option>Gwalior</option>
+        <option>Udaipur</option>
+        <option>Jaipur</option>
+        <option>Faridabaad</option>
+        <option>Rampur</option>
+ 
+    </select>
+    <select id="Scity">
+        <option>-Select-</option>
+    <input type="button" value="Click -Now" onclick="test()"> 
+
+</html>

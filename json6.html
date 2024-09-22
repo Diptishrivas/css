@@ -1,0 +1,46 @@
+<script>
+    function call()
+    {
+       var cars=[{carname:'Mahindra Thar ROXX',OnRoadPrice:'Rs.12.99 - 20.49L',Engine:'1997cc - 2184cc',Power:'150-174',picture:'Mahindra Thar ROXX.png'},
+                 {carname:'Hyundai Palisade',OnRoadPrice:'Rs.35 - 40L',Engine:'1497cc - 1482cc',Power:'143-250',picture:'Hyundai Palisade.png'},
+                 {carname:'Honda City',OnRoadPrice:'12.08 - 16.35L',Engine:'1498 cc',Power:'119.35 bhp',picture:'Honda City.png'},
+                 {carname:'MG Gloster',OnRoadPrice:'38.80 - 43.87L',Engine:'1996 cc',Power:'158.79 - 212.55 bhp',picture:'MG Gloster.png'},
+                 {carname:'Toyota Fortuner',OnRoadPrice:'33.43 - 51.44L',Engine:'2694 cc - 2755 cc',Power:'163.6 - 201.15 bhp',picture:'Toyota Fortuner.jpg'},
+                 {carname:'Nissan X-Trail',OnRoadPrice:'6 - 11.27',Engine:'999 cc',Power:'71.01 - 98.63 bhp',picture:'Nissan X-Trail.png'},
+
+     
+
+            ]
+            var  bikes=[{bikename:'Yamaha MT15V2',OnRoadprice:169207, Engine:'155cc',Mileage:'48kmpl',picture:'Yamaha MT15V2.png'},
+                        {bikename:'KTM 125 Duke',OnRoadprice:180319, Engine:'124cc',Mileage:'48kmpl',picture:'KTM 125 Duke.png'},
+                        {bikename:'OLA Roadster',OnRoadprice:104999, Engine:'151cc',Mileage:'46kmpl',picture:'OLA Roadster.png'},
+                        {bikename:'Royal Enfield Hunter 350',OnRoadprice:149900, Engine:'349.34 cc',Mileage:'36kmpl',picture:'Royal Enfield Hunter 350.png'},
+                        {bikename:'Lectrix LXS 3.0',OnRoadprice:96990, Engine:'120cc',Mileage:'46kmpl',picture:'Lectrix LXS 3.0.jpg'},
+                        {bikename:'Hero Splendor Plus',OnRoadprice:74046, Engine:'97.2cc',Mileage:'60kmpl',picture:'Hero Splendor Plus.png'},
+
+
+            ]
+    
+         
+          htm=`<table border='1' cellspacing='1' cellpadding='1'><tr>`
+               cars.map((item)=>{
+                htm+=`<th><img src='${item.picture}' width='150' height='120'><h1><font color='blue'>${item.carname}</font></h1><h3>OnRoadPrice-${item.OnRoadPrice}</h3><h4>Engine-${item.Engine}<br>Power-${item.Power}<br><br><h1><b><font color='red'>BUY NOW</h1></b></font></h4></th>`
+                
+            })
+              htm+=`</tr><tr>`
+    
+              
+            
+            htm+=`<table border='1' cellspacing='1' cellpadding='1'><tr>`
+                bikes.map((item)=>{
+                    htm+=`<th><img src='${item.picture}' width='150' height='150'><h1><font color='blue'>${item.bikename}</font></h1><h3>OnRoadPrice-${item.OnRoadprice}</h3><h4>Engine-${item.Engine}<br>mileage-${item.Mileage}<br><br><h1><b><font color='red'>BUY NOW</h1></b></font></h4></th>`
+                })
+                htm+=`</tr></table>`
+                result.innerHTML=htm
+            
+            }
+            </script>
+<html>
+    <input type="button" value="clickhere" onclick="call()"/>
+    <div id="result"></div>
+</html>

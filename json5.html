@@ -1,0 +1,22 @@
+<script>
+    function call(){
+        var restaurant=[{restaurantname:'The Black pepper',dishe:'japnese',specilization:'suhshi',Rate:'Rs.330',picture:'suhshi.jpg' },        
+                        {restaurantname:'Palm & Pine',dishe:'italian',specilization:'pasta',Rate:'Rs.650',picture:'pasta.jpg'},
+                        {restaurantname:'Mountain Mercado',dishe:'pahadi',specilization:'gahat ke paranth',Rate:'Rs.280',picture:'gahat ke paranth.jpg'},
+                        {restaurantname:'Paneer Paradise',dishe:'southIndian',specilization:'paneer masala dosa',Rate:'Rs.370',picture:'paneer masala dosa.jpg'},
+                        {restaurantname:'Biryaniboulevard',dishe:'mumbaispecial',specilization:'briyani',Rate:'Rs.200',picture:'briyani.jpg'},
+
+        ]
+          htm=`<table border='2' cellspacing='3' cellpadding='3' ><tr>`
+            restaurant.map((item)=>{
+          htm+=`<th><h1><font color='red'>${item.restaurantname}</font></h1> <br><img src='${item.picture}' width='250' height='200'><br><br><h2>dishe-${item.dishe}<br>specilization-${item.specilization}<br>Rate-${item.Rate}<br><b><h3><font color='blue'>Order NOW</h3></b></font><br></th>`
+            })
+            htm+=`</tr></th>`
+            result.innerHTML=htm
+
+        }
+</script>
+<html>
+      <input type="button" value="clickhere" onclick="call()">
+      <div id="result"></div>
+</html>

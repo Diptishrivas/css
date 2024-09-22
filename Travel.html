@@ -1,0 +1,59 @@
+<script src="Travel.js"></script>
+<html>
+    <center>
+    <h1><b><u>Shrivas ji Tour Travels</u></b></h1>
+    <h2>Bus services</h2>
+    </center>
+    <body>
+        <label>FROM:</label>
+        <select id="cities" >
+        <option>--please choose a city-- ></option>
+        <option>gwalior</option>
+        <option >Delhi</option>
+        <option >orissa</option>
+        <option >mathura</option>
+        <option >patna</option>
+        <option >jammu&kashmir</option>
+        <option >Amirtsar</option>
+        <option >Ludhiyana</option>
+        <option >Haryana</option>
+        <option >NOIDA</option>
+        <option >karnataka</option>
+        <option >Assam</option>
+        </select><br><br>
+        <div id="travel"></div>
+        <lable>TO:</lable>
+        <select id="place" >
+            <option>--please choose a city-- ></option>
+            <option>gwalior</option>
+            <option >Delhi</option>
+            <option >orissa</option>
+            <option >mathura</option>
+            <option >patna</option>
+            <option >jammu&kashmir</option>
+            <option >Amirtsar</option>
+            <option >Ludhiyana</option>
+            <option >Haryana</option>
+            <option >NOIDA</option>
+            <option >karnataka</option>
+            <option >Assam</option>
+        
+        </select><br><br><br>
+        <label>RENT :</label>
+        <input type="text" value="10" id="rent" readonly="true"><br><br>
+        <lable>kilometer</lable>
+        <input type="text" id="km"><br><br>
+        <lable>TYPE</lable>
+        <select id="bustype"><br><br>
+        <option >AC</option>
+        <option >NON-AC</option>
+        <option>volvo</option>
+        </select><br><br>
+
+    
+    <input type="button" value="GetAmount" onclick="call()"><br><br>
+    <div id="amount"></div>
+    </body>
+     
+
+</html>

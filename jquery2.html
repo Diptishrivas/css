@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#txt1').val(20)
+
+         $('#btn').click(function(){
+            var c=$("#txt1").val()*$("#txt2").val()
+            var htm=`<font color="red" size="25"> Addition ${c}</font>`
+           
+            $('#result').html(htm)
+    })
+    })
+</script>
+<html>
+    <input type="txt1" placeholder="rate"><br><br>
+    <input type="txt2" placeholder="Quantity"><br><br>
+    <div id="result"></div>
+    <input type="button" value="click Here" id="btn">
+</html>

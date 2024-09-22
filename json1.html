@@ -1,0 +1,23 @@
+<script>
+    function call()
+    {
+        var customer={"id":"101","name":"shyam","dob":"2000/5/1","gender":"male"}
+        console.log(customer.id)
+        console.log(customer.name)
+     // append data in JSON
+     customer['city']='gwalior'
+     console.log(customer.city)
+       customer.address='chinapur'
+       console.log(customer.address)
+     //  edit  json data
+        customer['name']='murari'
+        console.log(customer['name'])
+      //  delete data from json
+        delete customer.gender
+       console.log(customer.dob)
+        console.log(customer)
+    }
+</script>
+<html>
+    <input type="button" value="click here" onclick="call()"/>
+</html>

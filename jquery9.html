@@ -1,0 +1,13 @@
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+         $(document).ready(function() {
+             $('.employee').click(function() {
+               alert($(this).attr('city')+","+$(this).attr('age'))
+             })
+         })
+</script>
+<html>
+    <div class="employee" name="Ram" age="23" city="gwalior">Ram</div><br><br>
+    <div class="employee" name="shayam" age="45" city="bhopal">shayam</div><br><br>
+    <div class="employee" name="kallu" age="32" city="delhi">kallu</div>
+</html>

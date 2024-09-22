@@ -1,0 +1,63 @@
+<script src="resultprac.js"></script>
+<html><center>
+    <table>
+    <h1>Result ID</h1>
+    <tr>
+    <td><b>Name :</b></td>
+    <td><input type="text" id="n" placeholder="enter your name" ></td>
+    </tr>
+    <tr>
+    <td><b>Fathers name :</b></td>
+    <td><input type="text" id="fn" placeholder="father name"></td>
+    </tr>
+    <tr>
+    <td><b>Date birth :</b></td>
+    <td><input type="date" id="bd"></td>
+    </tr>
+    <tr>
+    <td><b>Board</b></td>
+    <td><input type="radio" id="bn" value="cbse">CBSE
+    <td><input type="radio" id="bn" value="mp">MP
+        </td>
+    </tr>
+    <tr>
+    <td><b>physics</b></td>
+    <td><input type="text" id="pm" placeholder="physicsmarks"></td> 
+    <td><input type="text" id="pp" placeholder="practicalmarks"></td>
+    </tr>
+    <tr>
+    <td><b>chemistry</b></td>
+    <td><input type="text" id="cm" placeholder="chemistrymarks"></td>
+    <td><input type="text" id="cp" placeholder="practicalmarks"></td>
+    </tr>
+    <tr>
+    <td><b>maths</b></td>
+    <td><input type="text" id="mm" placeholder="mathsmarks"></td>
+    <td><input type="text" id="mp" placeholder="practicalmarks"></td>
+    </tr>
+    <tr>
+    <td><b>English</b></td>
+    <td><input type="text" id="em" placeholder="mathsmarks"></td>
+    <td><input type="text" id="ep" placeholder="practicalmarks"></td>
+    </tr>
+    <tr>
+    <td><b>Hindi</b></td>
+    <td><input type="text" id="hm" placeholder="mathsmarks"></td>
+    <td><input type="text" id="hm" placeholder="practicalmarks"></td>
+    </tr>
+    <tr>
+        <td><b>Gender:</b></td>
+        <td><select id="fm" onchange="fillgender()">
+           <option>choose</option>
+            <option>Male</option>
+            <option>Female</option>
+       </select></td>
+    </tr>
+
+</table>
+<div id="result"></div>
+<input type="button" value="get result" onclick="soul()">
+</center>
+
+    
+</html>

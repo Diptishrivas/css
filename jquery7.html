@@ -1,0 +1,11 @@
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        var country=[['india',rupees],['japan',yen],['america',300],['russia',400],['U.S',500]]
+        $('#fill_btn').click(function(){
+            .map((item)=> {
+                $('#country').append($('<option>').text(item[0]).val(item[1]))
+                })
+            })
+        })
+</script>

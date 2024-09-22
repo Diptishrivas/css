@@ -1,0 +1,24 @@
+<script>
+    function call()
+    {
+       var cars=[{carname:'Mahindra Thar ROXX',OnRoadPrice:'Rs.12.99 - 20.49L',Engine:'1997cc - 2184cc',Power:'150-174',picture:'Mahindra Thar ROXX.png'},
+                 {carname:'Hyundai Palisade',OnRoadPrice:'Rs.35 - 40L',Engine:'1497cc - 1482cc',Power:'143-250',picture:'Hyundai Palisade.png'},
+                 {carname:'Honda City',OnRoadPrice:'12.08 - 16.35L',Engine:'1498 cc',Power:'119.35 bhp',picture:'Honda City.png'},
+                 {carname:'MG Gloster',OnRoadPrice:'38.80 - 43.87L',Engine:'1996 cc',Power:'158.79 - 212.55 bhp',picture:'MG Gloster.png'},
+                 {carname:'Toyota Fortuner',OnRoadPrice:'33.43 - 51.44L',Engine:'2694 cc - 2755 cc',Power:'163.6 - 201.15 bhp',picture:'Toyota Fortuner.jpg'},
+                 {carname:'Nissan X-Trail',OnRoadPrice:'6 - 11.27',Engine:'999 cc',Power:'71.01 - 98.63 bhp',picture:'Nissan X-Trail.png'},
+
+
+       ]
+          htm=`<table border='1' cellspacing='1' cellpadding='1'><tr> `
+            cars.map((item)=>{
+                htm+=`<th><img src='${item.picture}' width='150' height='100'><h1>${item.carname}<h1><h3>OnRoadPrice-${item.OnRoadPrice}</h3><h4>Engine-${item.Engine}<br>Power-${item.Power}<br><br><h1><b><font color='red'>BUY NOW</h1></b></font></h4></th>`
+            })
+              htm+=`</tr></th>`
+              result.innerHTML=htm
+    }
+</script>
+<html>
+    <input type="button" value="clickhere" onclick="call()"/>
+    <div id="result"></div>
+</html>

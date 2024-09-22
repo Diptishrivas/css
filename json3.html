@@ -1,0 +1,23 @@
+<script>
+    function call()
+    {
+        var airways=[{FlightId:100, airwaysname:'vistara',ArrivalTime:'03:00pm',DepartureTime:'05:00pm' ,picture:'vistara.png'},
+                     {FlightId:200, airwaysname:'AirIndia',ArrivalTime:'10:00am',DepartureTime:'02:00pm', picture:'Airindia.png'},
+                     {FlightId:300, airwaysname:'Qatar',ArrivalTime:'03:00pm',DepartureTime:'11:00pm',picture:'Qatar.jpg'},
+                     {FlightId:400, airwaysname:'Indigo',ArrivalTime:'06:00am',DepartureTime:'01:00pm',picture:'Indigo.png'},
+        ]
+       // console.log(Flight.Id)
+        htm=`<table border='1' cellspacing='3' cellpadding='3'><tr>`
+            airways.map((item)=>{
+                htm+=`<th><img src='${item.picture}' width='250'height='100'><br><h2>airway name:${item.airwaysname} <br>FlightId:${item.FlightId}</h2><h3><br>Arrival Time:${item.ArrivalTime}<br> Department Time:${item.DepartureTime}</h3></th>`
+                })
+                    htm+=`</tr></table>`
+                    result.innerHTML=htm
+            
+    }
+</script>
+
+<html>
+    <input type="button" value="clickhere" onclick="call()"/>
+    <div id="result"></div>
+</html>

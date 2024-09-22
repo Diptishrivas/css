@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var hero=[['sushant',100],['varun',200],['sharukh',300],['Ajay',400],['Tiger',500]]
+           $('#fill_btn').click(function(){
+            hero.map((item)=>{
+                   $('#actors').append($('<option>').text(item[0]).val(item[1]))
+    })
+
+})
+          $('#del_btn').click(function() {
+            $('#actors').empty()
+          })
+
+    })
+</script>
+<html>
+    <select id="actors">
+        <option>-select-</option>
+    </select>
+    <input type="button" value="fill" id="fill_btn">
+    <input type="button" value="Delete" id="del_btn">
+    <div id="result"></div>
+</html>

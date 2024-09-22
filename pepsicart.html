@@ -1,0 +1,27 @@
+<script>
+    function call()
+    {
+        var product=[{productid:100,productname:'pepsi',qty:'200 ml',rate:20,offer:5,picture:'pepsi.jpg'},
+   {productid:200,productname:'Appyfizz',qty:'100 ml',rate:90,offer:17,picture:'Appyfizz.png'},
+   {productid:300,productname:'Maza',qty:'200 ml',rate:76,offer:18,picture:'Maza.png'},
+   {productid:400,productname:'lichi',qty:'200 ml',rate:40,offer:10,picture:'lichi.png'},
+   {productid:500,productname:'sprite',qty:'200 ml',rate:15,offer:3,picture:'sprite.png'},
+   {productid:600,productname:'coca',qty:'200 ml',rate:30,offer:15,picture:'Coca.png'},
+]
+
+// alert(JSON.stringify(product))
+//console.log(product)
+
+   htm=`<table border='1' cellspacing='8' cellpadding='3' ><tr>`
+   product.map((item)=>{
+   htm+=`<th><h3> ${item.productname} ${item.qty}</h3><br><br><img src='${item.picture}' width='250'><br><br><font color='red'><b> &#8377;<s>${item.rate}</s></b></font><br><br> <font color='green'>&#8377;<b>${item.offer}</b></font><br><br><font color='brown'><b>You Save &#8377;${item.rate-item.offer}</b></font><br><br></th>`
+   })
+    htm+=`</tr></table>`
+    result.innerHTML=htm
+    }
+   </script>
+   <html>
+       <input type="button" value="Click Here" onclick="call()"/>
+       <br>
+       <div id="result"></div>
+   </html>
